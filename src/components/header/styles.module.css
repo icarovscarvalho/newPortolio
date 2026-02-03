@@ -1,0 +1,41 @@
+header{
+  display: flex;
+
+  height: fit-content;
+  width: 100%;
+  min-width: fit-content;
+  padding: 20px 40px;
+
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  background-color: var(--neutral-100);
+  border-radius: 100px;
+}
+
+.navBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+}
+
+.softskills, .logo, .hardskills {
+  display: flex;
+  gap: 1rem;
+
+  &>p {
+    padding: 4px 10px;
+    cursor: pointer;
+    transition: all ease-in-out .5s;
+  }
+
+  &>p:hover{
+    color: var(--amber-300);
+  }
+}
+
+.logo{
+  height: 3rem;
+}
