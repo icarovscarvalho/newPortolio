@@ -1,6 +1,8 @@
 import styles from './styles.module.css'
 import photo from '../../assets/foto.webp'
 
+import { FaFileDownload } from "react-icons/fa";
+
 export function Hero() {
 
   const myPhoto = photo
@@ -19,7 +21,7 @@ export function Hero() {
           <img src={myPhoto} alt="" />
         </div>
         <div className={styles.headhunterBtn}>
-          <button className={styles.portfolioBtn}>Portfólio</button>
+          <button className={styles.portfolioBtn}>Currículo <FaFileDownload /></button>
           <button className={styles.hireMeBtn}>Contratar</button>
         </div>
       </div>

@@ -31,8 +31,8 @@
 }
 
 .circle {
-  height: 30rem;
-  width: 30rem;
+  height: 50rem;
+  width: 50rem;
   border-radius: 100%;
   background-color: orangered;
   display: flex;
@@ -41,7 +41,7 @@
 }
 
 .circle>img {
-  max-height: 50rem;
+  max-height: 70rem;
   max-width: 100%;
   object-fit: contain;
 }
@@ -98,6 +98,16 @@
 
   .introField>h1 {
     font-size: 2.8rem;
+  }
+
+  .circle {
+    height: 30rem;
+    width: 30rem;
+  }
+
+  .circle>img {
+    max-height: 50rem;
+    max-width: 100%;
   }
 
   .headhunterBtn {
