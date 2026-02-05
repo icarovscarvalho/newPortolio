@@ -14,7 +14,7 @@ header{
 
   color: #fff;
   font-family: "Michroma", sans-serif;
-  background-color: var(--neutral-100);
+  background-color: var(--neutral-400);
   border-radius: 100px;
   box-shadow: 0px 5px 10px #00000071;
 }

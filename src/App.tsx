@@ -1,6 +1,7 @@
 import './App.css'
 import { Header } from './components/header'
 import { Hero } from './components/hero'
+import { Skills } from './components/skills'
 
 export default function App() {
 
@@ -8,7 +9,9 @@ export default function App() {
     <div className='container'>
       <Header />
       <Hero />
-      <main></main>
+      <main>
+        <Skills />
+      </main>
       <footer></footer>
     </div>
   )
