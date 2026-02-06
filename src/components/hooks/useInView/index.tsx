@@ -1,14 +1,18 @@
 import { useEffect, useRef, useState } from "react";
 
-export function useInView(threshold = 0.25) {
+/* =========================
+   HOOK: anima ao entrar na tela
+========================= */
+
+export function useInView(threshold = 0.3) {
   const ref = useRef<HTMLDivElement | null>(null);
-  const [isVisible, setIsVisible] = useState(false);
+  const [visible, setVisible] = useState(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setIsVisible(true);
+          setVisible(true);
           observer.disconnect(); // anima uma vez
         }
       },
@@ -20,5 +24,5 @@ export function useInView(threshold = 0.25) {
     return () => observer.disconnect();
   }, [threshold]);
 
-  return { ref, isVisible };
+  return { ref, visible };
 }

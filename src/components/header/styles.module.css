@@ -1,6 +1,7 @@
 .headerContainer{
   display: flex;
   justify-content: center;
+  margin: 50px 0px 100px;
 }
 
 header{
@@ -63,6 +64,7 @@ header{
 
   .headerContainer {
     justify-content: flex-end;
+    margin: 20px 0px 50px;
   }
 
   header{
@@ -91,6 +93,14 @@ header{
 
   .menuIcon {
     display: block;
+  }
+
+}
+
+@media screen and (min-width: 1280px) {
+
+  .headhunterBtn {
+    align-self: flex-end;
   }
 
 }
