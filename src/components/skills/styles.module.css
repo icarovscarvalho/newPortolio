@@ -1,26 +1,25 @@
 .sectionSkills {
-  position: absolute;
-  z-index: 1;
   display: flex;
   flex-direction: column;
   gap: 30px;
   
   height: fit-content;
   width: 100%;
+  max-width: 1500px;
   padding: 20px 40px;
-  margin-top: 20px;
 
   color: #fff;
   font-family: "Michroma",
     sans-serif;
   background-color: var(--neutral-200);
-  border-radius: 0 0 20px 20px;
+  border-radius:40px;
   box-shadow: 0px 5px 10px #00000071;
 }
 
 .title {
   line-height: 3rem;
   padding-bottom: 20px;
+  margin-top: 20px;
   border-bottom: 1px solid #5e5e5e;
 
   >h2 {
@@ -39,7 +38,7 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  flex-direction: column;
+  flex-direction: row;
   gap: 20px;
   width: 100%;
 }
@@ -63,7 +62,7 @@
     align-items: center;
     gap: 10px;
 
-    padding: 5px 12px;
+    padding: 5px 20px;
     color: #000;
     border-radius: 25px;
     background-color: #fff;
@@ -81,8 +80,6 @@
 
 @media screen and (max-width: 1360px){
   .skillsContainer {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+    flex-direction: column;
   }
 }

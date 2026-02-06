@@ -1,5 +1,9 @@
 .heroContainer {
-  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
   text-align: center;
   font-family: "Michroma", sans-serif;
   color: var(--neutral-400);
@@ -27,23 +31,27 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 90px;
-  flex-direction: column;
+  flex-direction: row;
+
+  margin-top: 50px;
+  padding-bottom: 20px;
+  height: 600px;
+  width: 100%;
+  max-width: 1500px;
+  background-image: url(../../assets/bgHero.png);
+  background-repeat: no-repeat;
+  background-position: top center;
 }
 
-.circleContentBox {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-around;
-  padding-top: 50px;
-  width: 100%;
-  max-width: 2200px;
+.mobilePhoto {
+  display: none;
+  height: 300px;
 }
 
 .textBox1, .textBox2 {
   display: block;
 
-  max-width: 620px;
+  max-width: 520px;
   font-size: 2rem;
   color: #363636;
 }
@@ -73,22 +81,6 @@
   }
 }
 
-.circle {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  height: 35rem;
-  width: 35rem;
-  border-radius: 100%;
-  background-color: orangered;
-}
-
-.circle>img {
-  max-height: 70rem;
-  max-width: 100%;
-}
-
 .headhunterBtn {
   display: flex;
   align-items: center;
@@ -96,8 +88,6 @@
   gap: 10px;
 
   padding: 5px;
-  margin-top: -150px;
-  margin-left: 30px;
   background-color: #fff;
   border-radius: 50px;
   /* espaçamento abaixo do círculo */
@@ -155,36 +145,44 @@
   .introField>h1 {
     font-size: 2rem;
   }
-
-  .textBox1,
-  .textBox2  {
-    display: none;
-  }
-
-  .circle {
-    height: 30rem;
-    width: 30rem;
-  }
-
-  .circle>img {
-    max-height: 50rem;
-    max-width: 100%;
-  }
-
-  .headhunterBtn {
-    display: flex;
-    flex-direction: column;
-    margin-left: 0px;
-    border-radius: 25px;
-  }
   
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 900px) {
 
-  .circle {
-    height: 20rem;
-    width: 20rem;
+  .contentField {
+    flex-direction: column;
+    gap: 50px;
+    height: fit-content;
+    background-image: none;
+  }
+
+  .mobilePhoto {
+    display: block;
+    order: 1;
+
+  }
+
+  .textBox1,
+  .textBox2 {
+    align-items: center;
+    text-align: center;
+    order: 3;
+  }
+
+  .headhunterBtn {
+    flex-direction: column;
+    border-radius: 25px;
+    order: 2;
   }
 
 }
+
+@media screen and (min-width: 1280px) {
+
+  .headhunterBtn {
+    align-self: flex-end;
+  }
+
+}
+
