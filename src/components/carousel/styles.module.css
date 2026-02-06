@@ -26,6 +26,8 @@
   height: 500px;
   border-radius: 18px;
   overflow: hidden;
+  box-shadow: 10px 5px 10px #0000005d;
+  overflow: hidden;
 }
 
 .cardImage img {
@@ -54,11 +56,12 @@
   padding: 4px 20px;
   border-radius: 8px;
   color: #fff;
-  background-color: var(--neutral-100);
+  background: #FF4500;
+    background: linear-gradient(0deg, rgba(255, 69, 0, 1) 0%, rgba(255, 133, 89, 1) 82%, rgba(255, 69, 0, 1) 100%);
 }
 
 .cardTitle {
-  color: orangered;
+  color: #ff4500;
   text-align: start;
   font-size: 1.4rem;
   font-weight: 600;

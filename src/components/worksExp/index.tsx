@@ -1,3 +1,4 @@
+import Accordion from "../accordion";
 import { Carousel } from "../carousel";
 import styles from "./styles.module.css"
 
@@ -12,6 +13,7 @@ export function WorksExp() {
         <button className={styles.portfolioBtn}>Currículo <GoDownload /></button>
       </div>
       <Carousel />
+      <Accordion />
     </section>
   )
 }
