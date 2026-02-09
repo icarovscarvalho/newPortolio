@@ -1,0 +1,43 @@
+.aboutField {
+  font-family: "Michroma", sans-serif;
+  background-color: var(--gray-100);
+}
+
+.aboutContainer {
+  display: flex;
+  align-items: center;
+
+  max-width: 1500px;
+  padding: 0 1rem;
+}
+
+.aboutContainer>.contentField {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.aboutContainer>.contentField>.status {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  
+  >p {
+    text-align: start;
+    flex: 1;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  
+  .aboutContainer{
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .aboutContainer>.imgField>img {
+    height: 300px;
+  }
+
+}

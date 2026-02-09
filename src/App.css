@@ -6,6 +6,7 @@ font-family: "Michroma", sans-serif; */
 
 :root {
   --custom: #fff;
+  --gray-100: #CDCDCD;
   --neutral-100: #3C3C3C;
   --neutral-200: #2A2E34;
   --neutral-300: #1E2328;
@@ -23,7 +24,7 @@ font-family: "Michroma", sans-serif; */
 
 .container {
   position: relative;
-  padding: 1rem;
+  /* padding: 1rem; */
 
   height: 100dvh;
 }
@@ -32,4 +33,6 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  padding: 0 1rem;
 }

@@ -1,13 +1,14 @@
 import styles from './styles.module.css'
-import photo from '../../assets/foto.webp'
-import photoMobile from '../../assets/bgHeroMobile.png'
 
 import { GoDownload } from "react-icons/go";
 import { FaStar } from "react-icons/fa";
+import { HireMeBtn } from '../hireMeBtn';
+
+import photoMobile from '../../assets/bgHeroMobile.png'
+import cv from '../../../public/docs/cv.pdf'
 
 export function Hero() {
 
-  const myPhoto = photo
   const myPhotoMobile = photoMobile
 
   return(
@@ -30,8 +31,10 @@ export function Hero() {
         </div>
 
         <div className={styles.headhunterBtn}>
-          <button className={styles.portfolioBtn}>Currículo <GoDownload /></button>
-          <button className={styles.hireMeBtn}>Contratar</button>
+          <HireMeBtn />
+          <button className={styles.cvBtn}>
+            <a href={cv} download={"CV Ícaro Carvalho - Desenvolvedor Web Frontend"}>Currículo <GoDownload /></a>
+          </button>
         </div>
 
         <div className={styles.textBox2}>

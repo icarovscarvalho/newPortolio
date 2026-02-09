@@ -1,0 +1,32 @@
+.hireMeBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 18px;
+  width: 200px;
+  font-size: 1.3rem;
+  border-radius: 25px;
+  cursor: pointer;
+
+  background-color: var(--bg-color);
+  border: 1px solid var(--border-color);
+
+  transition:
+    background-color 0.2s ease-in-out,
+    border-color 0.2s ease-in-out;
+}
+
+.hireMeBtn:hover {
+  background-color: #000;
+  border-color: var(--border-hover-color);
+}
+
+.hireMeBtn a {
+  color: var(--text-color);
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.hireMeBtn:hover a {
+  color: var(--text-hover-color);
+}

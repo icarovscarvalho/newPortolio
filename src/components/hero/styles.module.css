@@ -3,6 +3,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  padding: 0 1rem;
   margin-top: 30px;
   text-align: center;
   font-family: "Michroma", sans-serif;
@@ -93,43 +95,31 @@
   /* espaçamento abaixo do círculo */
 }
 
-.headhunterBtn>.portfolioBtn,
-.headhunterBtn>.hireMeBtn {
+.headhunterBtn>.cvBtn {
   padding: 12px 18px;
   width: 200px;
   font-size: 1.3rem;
   text-align: center;
   border-radius: 25px;
-  border: none;
+  border: 1px solid #000;
   outline: none;
   cursor: pointer;
 }
 
-.headhunterBtn>.portfolioBtn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: orangered;
-  color: #fff;
-  border: 1px solid #fff;
+.headhunterBtn>.cvBtn>a {
+  color: #000;
+  text-decoration: none;
 }
 
-.headhunterBtn>.hireMeBtn {
-  background-color: #fff;
-  border: 1px solid #000;
-}
-
-.headhunterBtn>.portfolioBtn:hover {
+.headhunterBtn>.cvBtn:hover {
   background-color: #000;
-  transition: all ease-in-out .2s;
-}
-
-.headhunterBtn>.hireMeBtn:hover {
-  background-color: #000;
-  color: #fff;
   border: 1px solid #fff;
   transition: all ease-in-out .2s;
 }
+
+/* .headhunterBtn>.cvBtn>a:hover {
+  color: #fff;
+} */
 
 @media screen and (max-width: 1600px) {
 
