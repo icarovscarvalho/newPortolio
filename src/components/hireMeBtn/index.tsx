@@ -5,7 +5,7 @@ type HireMeProps = {
   borderColor?: string
   color?: string
   hoverColor?: string
-  hoverBorderColor?: string
+  hoverBorderColor?: string  
 }
 
 export function HireMeBtn({

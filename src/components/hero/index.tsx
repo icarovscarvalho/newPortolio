@@ -30,11 +30,15 @@ export function Hero() {
           <p>Front-End Developer focado em performance, usabilidade e código limpo.</p>
         </div>
 
-        <div className={styles.headhunterBtn}>
-          <HireMeBtn />
-          <button className={styles.cvBtn}>
-            <a href={cv} download={"CV Ícaro Carvalho - Desenvolvedor Web Frontend"}>Currículo <GoDownload /></a>
-          </button>
+        <div className={styles.btnsContainer}>
+          <div className={styles.headhunterBtn}>
+            <HireMeBtn />
+            <a href={cv} download="CV Ícaro Carvalho - Desenvolvedor Web Frontend">
+              <button className={styles.cvBtn}>
+                Currículo <GoDownload />
+              </button>
+            </a>
+          </div>
         </div>
 
         <div className={styles.textBox2}>
