@@ -1,5 +1,6 @@
 import './App.css'
 import { About } from './components/about'
+import { Footer } from './components/footer'
 import { Header } from './components/header'
 import { Hero } from './components/hero'
 import { Skills } from './components/skills'
@@ -18,7 +19,7 @@ export default function App() {
       <aside>
         <About />
       </aside>
-      <footer></footer>
+      <Footer />
     </div>
   )
 }

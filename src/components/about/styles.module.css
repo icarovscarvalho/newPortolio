@@ -1,4 +1,8 @@
 .aboutField {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   font-family: "Michroma", sans-serif;
   background-color: var(--gray-100);
 }
@@ -8,7 +12,10 @@
   align-items: center;
 
   max-width: 1500px;
-  padding: 0 1rem;
+}
+
+.aboutContainer>.imgField {
+  margin-top: 80px;
 }
 
 .aboutContainer>.contentField {
@@ -16,7 +23,7 @@
   justify-content: center;
   flex-direction: column;
   gap: 20px;
-  margin-top: 20px;
+  margin: 20px 0 80px;
 }
 
 .aboutContainer>.contentField>h2>strong {
@@ -44,10 +51,15 @@
   .aboutContainer{
     flex-direction: column;
     justify-content: center;
+    padding: 0 1rem;
   }
 
   .aboutContainer>.imgField>img {
     height: 300px;
+  }
+
+  .aboutContainer>.contentField>:nth-child(6) {
+    margin: auto;
   }
 
 }
