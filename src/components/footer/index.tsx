@@ -26,8 +26,8 @@ export function Footer() {
         <p>— <strong>Spencer Johnson</strong>, <i>Quem Mexeu no meu Queijo?</i></p>
       </blockquote>
       <div className={styles.socials}>
-        {iconsData.map( data =>
-          <a href={data.link} target="_blank">
+        {iconsData.map( (data, index) =>
+          <a key={index} href={data.link} target="_blank">
             <div>{data.icon}</div>
           </a>
         )}

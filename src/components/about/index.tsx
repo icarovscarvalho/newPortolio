@@ -22,7 +22,7 @@ export function About() {
   return(
     <>
       {content.map( (item, i) => 
-        <div className={styles.aboutField}>
+        <div key={i} className={styles.aboutField}>
           <div className={styles.aboutContainer}>
             <div className={styles.imgField}>
               <img src={item.img} alt={item.alt} />

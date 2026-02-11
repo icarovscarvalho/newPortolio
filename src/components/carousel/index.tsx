@@ -65,8 +65,8 @@ export function Carousel() {
             </div>
 
             <div className={styles.badgesField}>
-              {item.badge.map( tech => 
-                <div className={styles.badges}>
+              {item.badge.map( (tech, index) => 
+                <div key={index} className={styles.badges}>
                   <p>{tech}</p>
                 </div>
               )}
