@@ -16,6 +16,10 @@ font-family: "Michroma", sans-serif; */
   --amber-300: #F5A302;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;

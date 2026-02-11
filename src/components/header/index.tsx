@@ -8,18 +8,28 @@ export function Header() {
   const logoIcon = logo
 
   return(
-    <div className={styles.headerContainer}>
+    <div id="home" className={styles.headerContainer}>
       <header className={styles.header}>
         <nav className={styles.navBar}>
           <div className={styles.logo}>
             <img src={logoIcon} alt="logo Ícaro Carvalho Web Developer" />
           </div>
           <div className={styles.skills}>
-            <p>Home</p>
-            <p>Sobre</p>
-            <p>Experiência</p>
-            <p>Tecnologias</p>
-            <p>Contato</p>
+            <a href="#home">
+              <p>Home</p>
+            </a>
+            <a href="#about">
+              <p>Sobre</p>
+            </a>
+            <a href="#experience">
+              <p>Experiência</p>
+            </a>
+            <a href="#stack">
+              <p>Tecnologias</p>
+            </a>
+            <a href="#contact">
+              <p>Contato</p>
+            </a>
           </div>
         </nav>
       </header>

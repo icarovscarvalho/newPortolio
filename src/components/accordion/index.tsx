@@ -24,7 +24,7 @@ export default function Accordion() {
   }
 
   return (
-    <div className={styles.accordion}>
+    <div id="about" className={styles.accordion}>
       {items.map((item, index) => (
         <div key={index} className={styles.item}>
           <button

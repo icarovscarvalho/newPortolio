@@ -20,7 +20,7 @@ export function Footer() {
   ]
 
   return(
-    <footer className={styles.footerContainer}>
+    <footer id="contact" className={styles.footerContainer}>
       <blockquote className={styles.phrase}>
         <p>“ Quanto mais rápido você abandona o velho queijo, mais cedo encontra o novo. ”</p>
         <p>— <strong>Spencer Johnson</strong>, <i>Quem Mexeu no meu Queijo?</i></p>

@@ -56,7 +56,7 @@ export function Carousel() {
   }, []);
 
   return (
-    <section className={styles.carouselWrapper}>
+    <section id="experience" className={styles.carouselWrapper}>
       <div ref={trackRef} className={styles.track}>
         {items.map((item, index) => (
           <article key={index} className={styles.card}>

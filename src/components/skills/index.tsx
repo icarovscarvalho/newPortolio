@@ -83,7 +83,7 @@ export function Skills() {
   ];
 
   return (
-    <section className={styles.sectionSkills}>
+    <section id="stack" className={styles.sectionSkills}>
       <div className={styles.title}>
         <h2>Tecnologias que eu domino no dia a dia</h2>
         <p>
