@@ -1,73 +1,112 @@
-# React + TypeScript + Vite
+<p align="center">
+  <img src="./docs/preview.jpg" alt="Preview do Portfólio" width="800"/>
+</p>
+<!-- ![Preview do Portfólio](./docs/preview.jpg) -->
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Portfólio - Ícaro Carvalho
 
-Currently, two official plugins are available:
+[![Deploy](https://img.shields.io/badge/Deploy-Produção-0A0A0A?style=for-the-badge&logo=firebase&logoColor=FFCA28)](https://devicarocarvalho.web.app/)
+[![Status](https://img.shields.io/badge/status-online-success?style=for-the-badge)](https://devicarocarvalho.web.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Portfólio profissional desenvolvido com foco em organização de código, componentização e performance.  
+Projeto criado com o objetivo de apresentar minhas habilidades técnicas como Desenvolvedor Front-end e apoiar minha busca por oportunidade CLT.
 
-## React Compiler
+---
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+## Acesse o Projeto
 
-## Expanding the ESLint configuration
+Produção:  
+https://devicarocarvalho.web.app/
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Repositório:  
+https://github.com/icarovscarvalho/newPortolio
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Tecnologias Utilizadas
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+![React](https://img.shields.io/badge/React-18-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Vite](https://img.shields.io/badge/Vite-5-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![CSS Modules](https://img.shields.io/badge/CSS_Modules-000000?style=for-the-badge&logo=css3&logoColor=1572B6)
+![Firebase Hosting](https://img.shields.io/badge/Firebase-Hosting-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
+![Animate.css](https://img.shields.io/badge/Animate.css-Animation-FF6F00?style=for-the-badge)
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Principais Características
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- Estrutura baseada em componentes reutilizáveis
+- Separação clara de responsabilidades por pastas
+- Carrossel desenvolvido manualmente
+- Accordion desenvolvido manualmente
+- SEO configurado
+- Responsivo (mobile-first)
+- Deploy via Firebase Hosting
+
+---
+
+## Estrutura do Projeto
+
+Arquitetura organizada por domínio de responsabilidade, facilitando manutenção e escalabilidade:</br>
+src/</br>
+├── assets/</br>
+├── components/</br>
+│ ├── about/</br>
+│ ├── accordion/</br>
+│ ├── carousel/</br>
+│ ├── footer/</br>
+│ ├── header/</br>
+│ ├── hero/</br>
+│ ├── hireMeBtn/</br>
+│ ├── hooks/</br>
+│ ├── skills/</br>
+│ └── worksExp/</br>
+├── App.tsx</br>
+└── main.tsx</br>
+
+
+Essa organização permite localizar rapidamente cada parte da aplicação, mantendo o projeto previsível e escalável.
+
+---
+
+## Decisões Técnicas
+
+### Vite
+Escolhido por oferecer ambiente de desenvolvimento mais rápido e gerar builds mais leves para deploy.
+
+### React (SPA)
+O projeto não exigia SSR, portanto a abordagem SPA foi suficiente e mais simples para o contexto.
+
+### CSS Modules
+Inicialmente o projeto utilizaria Tailwind, porém como houve inconsistências no funcionamento, optei por CSS Modules para manter maior controle sobre os estilos e evitar complexidade desnecessária.
+
+### Arquitetura por Componentes
+A divisão em pastas específicas para cada funcionalidade facilita manutenção, leitura e evolução do código.
+
+---
+
+## Projetos Apresentados
+
+- **LemonPop** (Repositório público)
+- **Saúde Integral do Homem** (Projeto em produção)
+- **Bloodhound RPG** (Projeto em produção)
+
+Todos os projetos apresentados foram desenvolvidos como Front-end.
+
+---
+
+## Como Executar Localmente
+
+```bash
+# Clone o repositório
+git clone https://github.com/icarovscarvalho/newPortolio.git
+
+# Acesse a pasta
+cd newPortolio
+
+# Instale as dependências
+npm install
+
+# Execute o projeto
+npm run dev
