@@ -1,6 +1,8 @@
+
 <p align="center">
-  <img src="./docs/preview.jpg" alt="Preview do Portfólio" width="800"/>
+  <img src="./public/docs/preview.jpg" alt="Preview do Portfólio" width="800"/>
 </p>
+<hr>
 <!-- ![Preview do Portfólio](./docs/preview.jpg) -->
 
 # Portfólio - Ícaro Carvalho
